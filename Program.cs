@@ -5,25 +5,21 @@ namespace System
     {
         static void Main(string[] args)
 
-        //Mad lib
+        //Arrays
 
         {
+            int[] luckyNumbers = { 54, 43, 90, 21, 32, 84, 11 };
 
-            string color, pluralNoun, celebrity;
+            string[] friends = new string[5];
 
-            Console.Write("Enter a color: ");
-            color = Console.ReadLine();
+            friends[0] = "Larry";
+            friends[1] = "Kim";
 
-            Console.Write("Enter a plural noun: ");
-            pluralNoun = Console.ReadLine();
+            luckyNumbers[3] = 900;
 
-            Console.Write("Enter a celebrity: ");
-            celebrity = Console.ReadLine();
+            Console.WriteLine(friends[1]);
 
-            Console.WriteLine("\nRoses are " + color);
-            Console.WriteLine(pluralNoun + " are Blue");
-            Console.WriteLine("I love " + celebrity);
-
+            Console.ReadLine();
         }
     }
 }
