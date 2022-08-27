@@ -5,20 +5,20 @@ namespace System
     {
         static void Main(string[] args)
 
-        //Methods && functions
+        //Return Statement
 
         {
+            int cubedNumber = CubeMe(5);
 
-            SayHi("Charles", 55);
-            SayHi("Carroll", 32);
-            SayHi("Sam", 17);
+            Console.WriteLine(cubedNumber);
 
             Console.ReadLine();
         }
 
-        static void SayHi(string name, int age)
+        static int CubeMe(int num)
         {
-            Console.WriteLine("Hello " + name + " you are " + age);
+            int result = num * num * num;
+            return result;
         }
     }
 }
