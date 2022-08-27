@@ -5,28 +5,18 @@ namespace System
     {
         static void Main(string[] args)
 
-        //working with numbers
+        //Getting user input
 
         {
-            
-            Console.WriteLine(Math.Round(4.7));
+            Console.WriteLine("enter username,");
+            string userName = Console.ReadLine();
+            Console.WriteLine("enter your age,");
+            int userAge = Convert.ToInt32(Console.ReadLine());
 
-            Console.ReadLine();
+            Console.WriteLine("you are " + userName + " and " + userAge + " years old");
 
         }
     }
 }
 
-//modulus operator 10 % 7      //3
-//integer 5/2                  //2
-//decimal 5/2.0                //2.5
-//num--                        //5
-
-//methods
-//Math.Abs(-8);                //8
-//Math.Pow(3, 9)               //9
-//Math.Sqrt(36)                //6
-//Math.Max(36, 90)             //90
-//Math.Min(36, 90)             //36
-//Math.Round(4.7)
 
