@@ -5,21 +5,20 @@ namespace System
     {
         static void Main(string[] args)
 
-        //Arrays
+        //Methods && functions
 
         {
-            int[] luckyNumbers = { 54, 43, 90, 21, 32, 84, 11 };
 
-            string[] friends = new string[5];
-
-            friends[0] = "Larry";
-            friends[1] = "Kim";
-
-            luckyNumbers[3] = 900;
-
-            Console.WriteLine(friends[1]);
+            SayHi("Charles", 55);
+            SayHi("Carroll", 32);
+            SayHi("Sam", 17);
 
             Console.ReadLine();
+        }
+
+        static void SayHi(string name, int age)
+        {
+            Console.WriteLine("Hello " + name + " you are " + age);
         }
     }
 }
