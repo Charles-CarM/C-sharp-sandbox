@@ -5,15 +5,25 @@ namespace System
     {
         static void Main(string[] args)
 
-        //Getting user input
+        //Calculator
 
         {
-            Console.WriteLine("enter username,");
-            string userName = Console.ReadLine();
-            Console.WriteLine("enter your age,");
-            int userAge = Convert.ToInt32(Console.ReadLine());
+            //    int num1 = Convert.ToInt32("67");
+            //    int num2 = Convert.ToInt32("43");
+            //    Console.Write("The sum is: " + (num2 + num1));
 
-            Console.WriteLine("you are " + userName + " and " + userAge + " years old");
+            //Console.Write("Enter a number: ");
+            //int num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Enter another number: ");
+            //int num2 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine(num1 + num2);
+
+
+            Console.Write("Enter a number: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter another number: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(num1 + num2);
 
         }
     }
