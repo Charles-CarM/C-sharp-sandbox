@@ -5,21 +5,24 @@ namespace System
     {
         static void Main(string[] args)
 
-        //data types
+        //working with strings
 
         {
-            string phrase = "Breakfast club";
-            char grade = 'T';
 
-            int age = -23;
-            double gpa = 3.35;
+            string phrase = "Breakfast Club";
 
-            bool isBeautiful = true;
-
-            Console.WriteLine(isBeautiful);
+            Console.WriteLine(phrase.Substring(0, 4));
 
             Console.ReadLine();
 
         }
     }
 }
+
+//phrase.ToUpper()        BREAKFAST CLUB  
+//phrase.ToLower()        breakfast club
+//phrase[0]               B  
+//phrase.IndexOf("Club")  10
+//phrase.Length           14
+//phrase.Substring(10)    Club
+//phrase.Substring(0, 4)  Brea
