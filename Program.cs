@@ -5,21 +5,28 @@ namespace System
     {
         static void Main(string[] args)
 
-        //Type Casting
+        //working with numbers
 
         {
-
-            int myNumber = 35;
-            double numTwo = 6.25;
-            bool myBull = true;
-
-            Console.WriteLine(Convert.ToString(myNumber));
-            Console.WriteLine(Convert.ToDouble(myNumber));
-            Console.WriteLine(Convert.ToInt32(numTwo));
-            Console.WriteLine(Convert.ToString(myBull));
+            
+            Console.WriteLine(Math.Round(4.7));
 
             Console.ReadLine();
 
         }
     }
 }
+
+//modulus operator 10 % 7      //3
+//integer 5/2                  //2
+//decimal 5/2.0                //2.5
+//num--                        //5
+
+//methods
+//Math.Abs(-8);                //8
+//Math.Pow(3, 9)               //9
+//Math.Sqrt(36)                //6
+//Math.Max(36, 90)             //90
+//Math.Min(36, 90)             //36
+//Math.Round(4.7)
+
