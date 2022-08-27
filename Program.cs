@@ -5,24 +5,21 @@ namespace System
     {
         static void Main(string[] args)
 
-        //working with strings
+        //Type Casting
 
         {
 
-            string phrase = "Breakfast Club";
+            int myNumber = 35;
+            double numTwo = 6.25;
+            bool myBull = true;
 
-            Console.WriteLine(phrase.Substring(0, 4));
+            Console.WriteLine(Convert.ToString(myNumber));
+            Console.WriteLine(Convert.ToDouble(myNumber));
+            Console.WriteLine(Convert.ToInt32(numTwo));
+            Console.WriteLine(Convert.ToString(myBull));
 
             Console.ReadLine();
 
         }
     }
 }
-
-//phrase.ToUpper()        BREAKFAST CLUB  
-//phrase.ToLower()        breakfast club
-//phrase[0]               B  
-//phrase.IndexOf("Club")  10
-//phrase.Length           14
-//phrase.Substring(10)    Club
-//phrase.Substring(0, 4)  Brea
