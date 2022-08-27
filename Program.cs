@@ -5,25 +5,24 @@ namespace System
     {
         static void Main(string[] args)
 
-        //Calculator
+        //Mad lib
 
         {
-            //    int num1 = Convert.ToInt32("67");
-            //    int num2 = Convert.ToInt32("43");
-            //    Console.Write("The sum is: " + (num2 + num1));
 
-            //Console.Write("Enter a number: ");
-            //int num1 = Convert.ToInt32(Console.ReadLine());
-            //Console.Write("Enter another number: ");
-            //int num2 = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine(num1 + num2);
+            string color, pluralNoun, celebrity;
 
+            Console.Write("Enter a color: ");
+            color = Console.ReadLine();
 
-            Console.Write("Enter a number: ");
-            double num1 = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Enter another number: ");
-            double num2 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine(num1 + num2);
+            Console.Write("Enter a plural noun: ");
+            pluralNoun = Console.ReadLine();
+
+            Console.Write("Enter a celebrity: ");
+            celebrity = Console.ReadLine();
+
+            Console.WriteLine("\nRoses are " + color);
+            Console.WriteLine(pluralNoun + " are Blue");
+            Console.WriteLine("I love " + celebrity);
 
         }
     }
