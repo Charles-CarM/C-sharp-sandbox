@@ -5,57 +5,24 @@ namespace System
     {
         static void Main(string[] args)
 
-        //Guessing game
+        //for loops
 
         {
-            //string secretWord = "hamster";
-            //string guess = "";
-            //int guessCount = 0;
-
-            //while (guess != secretWord)
+            //int j = 1;
+            //while (j <= 5)
             //{
-            //    Console.Write("guess a word: ");
-            //    guess = Console.ReadLine();
-
-            //    //Console.WriteLine("guess again");
-            //    guessCount++;
+            //    Console.WriteLine(j);
+            //    j++;
             //}
-            //Console.Write("You win, number of guesses: " + guessCount);
+            //Console.ReadLine();
 
-            string passWord = "orangutan";
-            string guess = "";
-            int guessCount = 0;
-            int guessLimit = 3;
-            bool outOfGuesses = false;
-
-            do
+            int[] luckyNumbers = { 4, 6, 9, 18, 32, 12 };
+            for(int j = 0; j < luckyNumbers.Length; j++)
             {
-                if (guessCount < guessLimit)
-                {
-                    Console.WriteLine("enter a guess: ");
-                    guess = Console.ReadLine();
-                    guessCount++;
-                }
-                else
-                {
-                    outOfGuesses = true;
-                }
-
-            } while (guess != passWord && !outOfGuesses);
-
-            if (outOfGuesses)
-            {
-                Console.WriteLine("you lose");
+                Console.WriteLine(luckyNumbers[j])  ;
             }
-            else
-            {
-                Console.WriteLine("you win!");
-
-            }
-
-            Console.ReadLine();
         }
-     
+
     }
 }
 
