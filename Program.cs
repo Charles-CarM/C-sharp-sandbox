@@ -5,39 +5,44 @@ namespace System
     {
         static void Main(string[] args)
 
-        //Next level calculator
+        //switch statement
 
         {
-            Console.Write("enter a number: ");
-            double num1 = Convert.ToDouble(Console.ReadLine());
-
-            Console.Write("Enter operator: ");
-            string op = Console.ReadLine();
-
-            Console.Write("enter another number: ");
-            double num2 = Convert.ToDouble(Console.ReadLine());
-
-            if (op == "+")
-            {
-                Console.WriteLine(num1 + num2);
-
-            }else if (op == "-")
-            {
-                Console.WriteLine(num1 - num2);
-            }
-            else if (op == "*")
-            {
-                Console.WriteLine(num1 * num2);
-
-            }else if (op == "/")
-            {
-                Console.WriteLine(num1 / num2);
-            }else
-            {
-                Console.WriteLine("you messed up somewhere");
-            }
-
+            Console.WriteLine(GetDay(45));
             Console.ReadLine();
+        }
+        static string GetDay(int dayNum)
+        {
+            string dayName;
+
+            switch (dayNum)
+            {
+                case 0:
+                    dayName = "Sunday";
+                    break;
+                case 1:
+                    dayName = "Monday";
+                    break;
+                case 2:
+                    dayName = "Tuesday";
+                    break;
+                case 3:
+                    dayName = "Wednesday";
+                    break;
+                case 4:
+                    dayName = "Thursday";
+                    break;
+                case 5:
+                    dayName = "Friday";
+                    break;
+                case 6:
+                    dayName = "Saturday";
+                    break;
+                default:
+                    dayName = "Invalid";
+                    break;
+            }
+            return dayName;
         }
 
     }
