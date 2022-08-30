@@ -5,19 +5,27 @@ namespace System
     {
         static void Main(string[] args)
 
-        //two dimensional array
+        //Exception handling
 
         {
-            int[,] numberGrid = {
-                {1, 2 },
-                {3, 4 },
-                {5, 6 },
-                {7, 8 },
-                {9, 10 },
-                {11, 12 }
-            };
+            try
+            {
+                Console.Write("Enter a number: ");
+                int num1 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter another number: ");
+                int num2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(numberGrid[2, 1]);
+                Console.WriteLine(num1 / num2);
+            }
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
             Console.ReadLine();
         }
 
