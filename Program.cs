@@ -5,22 +5,22 @@ namespace System
     {
         static void Main(string[] args)
 
-        //for loops
+        //Exponent method
 
         {
-            //int j = 1;
-            //while (j <= 5)
-            //{
-            //    Console.WriteLine(j);
-            //    j++;
-            //}
-            //Console.ReadLine();
+            Console.WriteLine(GetPow(4, 3));
+            Console.ReadLine();
+        }
 
-            int[] luckyNumbers = { 4, 6, 9, 18, 32, 12 };
-            for(int j = 0; j < luckyNumbers.Length; j++)
+        static int GetPow(int baseNum, int powNum)
+        {
+            int result = 1;
+            for(int j = 0; j < powNum; j++)
             {
-                Console.WriteLine(luckyNumbers[j])  ;
+                result = result * baseNum;
             }
+
+            return result;
         }
 
     }
