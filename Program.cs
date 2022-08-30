@@ -5,22 +5,20 @@ namespace System
     {
         static void Main(string[] args)
 
-        //Exponent method
+        //two dimensional array
 
         {
-            Console.WriteLine(GetPow(4, 3));
+            int[,] numberGrid = {
+                {1, 2 },
+                {3, 4 },
+                {5, 6 },
+                {7, 8 },
+                {9, 10 },
+                {11, 12 }
+            };
+
+            Console.WriteLine(numberGrid[2, 1]);
             Console.ReadLine();
-        }
-
-        static int GetPow(int baseNum, int powNum)
-        {
-            int result = 1;
-            for(int j = 0; j < powNum; j++)
-            {
-                result = result * baseNum;
-            }
-
-            return result;
         }
 
     }
