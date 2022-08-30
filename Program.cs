@@ -5,26 +5,21 @@ namespace Sandbox
     {
         static void Main(string[] args)
 
-        //Classes & Objects
+        //Constructors
 
         {
-            Book book1 = new Book();
-                book1.title = "Millennial Money";
-                book1.author = "Patrick O'Shaugnessy";
-                book1.pages = 250;
+            Book book1 = new Book("Millennial Money", "Patrick O'Shaugnessy", 250);            
+            Book book2 = new Book("Flash Boys", "Michael Lewis", 290);
+            Book book3 = new Book("The Great Gatsby", "F.Scott Fitzgerald", 237);
+            Book book4 = new Book();
 
-            Book book2 = new Book();
-                book2.title = "Flash Boys";
-                book2.author = "Michael Lewis";
-                book2.pages = 290;
+            book4.author = "Aldous Huxley";
+            book4.title = "The Island";
+            book4.pages = 330;
 
-            Book book3 = new Book();
-                book3.title = "The Great Gatsby";
-                book3.author = "F.Scott Fitzgerald";
-                book3.pages = 237;
-
-            Console.WriteLine(book2.pages);
-
+            Console.WriteLine($"{book1.title} by {book1.author}, {book1.pages} pages.\n");
+            Console.WriteLine($"{book2.title} by {book2.author}, {book2.pages} pages.\n");
+            Console.WriteLine($"{book3.title} by {book3.author}, {book3.pages} pages.\n");
             Console.ReadLine();
         }
 
