@@ -5,12 +5,16 @@ namespace Sandbox
     {
         static void Main(string[] args)
 
-        //static class methods
+        //Inheritance
 
         {
-            UsefulTools.SayHi("Sarah");
+            Chef souschef1 = new Chef();                      
+                souschef1.MakeSpecialDish();
+                   
+            MexicanChef souschef2 = new MexicanChef();
+                souschef2.MakeSpecialDish();
 
-            Console.ReadLine();
+            Console.ReadLine(); 
         }
        
     }
