@@ -5,23 +5,22 @@ namespace Sandbox
     {
         static void Main(string[] args)
 
-        //Object Methods
+        //Getters and Setters
 
         {
-            Student student1 = new Student("Kim", "Communications", 3.1);            
-            Student student2 = new Student("Hannah", "Petroleum Engineering", 3.7);
-            Student student3 = new Student("Alex", "Finance", 2.9);
-            //Student student4 = new Student();
+            Movie sandlot = new Movie("The Sandlot", "Smalls", "PG-13");
+            Movie rascals = new Movie("The Little Rascals", "Alfalpha", "PG");
 
-            Console.WriteLine(student1.HasHonors());
-            Console.WriteLine(student2.HasHonors());
-            Console.WriteLine(student3.HasHonors()); 
+            //G, PG, PG-13, R, NR
 
+            sandlot.Rating = "G";
+
+            Console.WriteLine(sandlot.Rating);
+            Console.WriteLine(rascals.Rating);
 
             Console.ReadLine();
         }
        
-
     }
 }
 
