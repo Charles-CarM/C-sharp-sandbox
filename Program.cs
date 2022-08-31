@@ -5,18 +5,17 @@ namespace Sandbox
     {
         static void Main(string[] args)
 
-        //Getters and Setters
+        //static class attributes
 
         {
-            Movie sandlot = new Movie("The Sandlot", "Smalls", "PG-13");
-            Movie rascals = new Movie("The Little Rascals", "Alfalpha", "PG");
+            Song watchTower = new Song("All along the watch tower", "Jimmy Hendrix", 265);
+            Console.WriteLine(Song.songCount);
 
-            //G, PG, PG-13, R, NR
+            Song stairWay = new Song("Stairway to Heaven", "Led Zeppelin", 250);
+            //Console.WriteLine(stairWay.getSongCount());
 
-            sandlot.Rating = "G";
-
-            Console.WriteLine(sandlot.Rating);
-            Console.WriteLine(rascals.Rating);
+            Song one = new Song("One", "Metallica", 279);
+            //Console.WriteLine(one.getSongCount());
 
             Console.ReadLine();
         }
